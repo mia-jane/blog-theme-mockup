@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+nav {
+  font-weight: 800;
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  height: 48px;
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 15px;
+}
+#start-bootstrap {
+  font-size: 1.3em;
+  position: absolute; left:0px;
+  padding-left: 60px;
+}
+#start-bootstrap:hover {
+    cursor: pointer;
+}
+#menu-button {
+  position: absolute; right:0px;
+  margin-right: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #737373;
+  font-weight: 800;
+  border-radius: 3px;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon {
+  width: 10px; 
+  height: 14px; 
+  padding-left: 5px;
+}
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  width: 100%;
+  text-align: left;
+  padding-left: 60px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+.dropdown-content span {
+  color: 	#808080;
+  padding: 12px 16px;
+  margin: 12px 70% 12px 0px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+.navLink:hover {
+  cursor: pointer;
+}
+.full-menu {
+  display: none;
+}
+.main-header {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("https://coursework.vschool.io/content/images/size/w2000/2017/12/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 380px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.main-header > h1 {
+  font-size: 3.0em;
+  margin: 0px;
+  font-weight: 800;
+}
+.main-header > p{
+  margin: 0px;
+  font-size: 22px;
+  font-weight: 300px;
+}
+.postsContainer{
+  /* padding: 50px 15px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post{
+  text-align: left;
+  width: 450px;
+  padding-top: 15px;
+}
+.title-subtitle > h3{
+  font-weight:800;
+  font-size: 30px;
+  margin: 10px 0px 0px 0px;
+}
+.subtitle {
+  font-weight: 300px;
+  font-size: 24px;
+  margin: 0px;
+  padding: 5px 0px 3px;
+}
+.title-subtitle {
+  transition: color 300ms;
+}
+.title-subtitle:hover {
+  color: teal;
+  cursor: pointer;
+}
+.posted-by{
+  font-weight: 400;
+  font-style: italic;
+  color: gray;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+.old-post-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 105px;
+}
+#older-posts-button {
+  background-color: #0085a1;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  border: none;
+  transition: background-color 300ms;
+  width: 180px;
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right-arrow {
+  width: 15px; 
+  height: 13px; 
+  filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(167deg) brightness(106%) contrast(105%);
+}
+
+#older-posts-button:hover {
+  background-color: #016A80;
+  cursor: pointer;
+}
+hr {
+  border: 1px solid whitesmoke;
+}
+.footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logos-container {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 55px;
+  height: 55px;
+}
+
+@media (min-width:770px){
+
+  .main-header {
+    height: 540px;
+  }
+  .dropdown-content span {
+    margin: 12px 80% 12px 0px;
+  }
+  .main-header > h1 {
+    font-size: 5.0em;
+  }
+
+  .post {
+    width: 600px;
+  }
+
+  .title-subtitle > h3 {
+    font-size: 35px;
+  }
+
+  .old-post-button-container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+    nav {
+      background-color: transparent;
+      color: white;
+    }
+
+    #menu-button {
+      display:none;
+    }
+
+    .full-menu {
+      display: flex;
+      width: 450px;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 10px 40px;
+    }
+
+    .full-menu > span{
+      font-size: 12px;
+    }
+
+    .post {
+      width: 700px;
+    }
+    .old-post-button-container {
+      width: 600px;
+    }
+}
